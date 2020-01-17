@@ -2,7 +2,15 @@
 using namespace std;
 
 char before(char x){
-	//Write your function definition here
+	if(x>='A' && x<='Z'){
+		if(x=='A'){
+			x='Z'+1;
+		}
+		return x-1;
+	}
+	return '0';
+
+	
 }
 
 int main(){
@@ -15,5 +23,4 @@ int main(){
 	cout << before('a') << "\n";
 	cout << before('0') << "\n";
 	cout << before('c') << "\n";
-	return 0;
 }
